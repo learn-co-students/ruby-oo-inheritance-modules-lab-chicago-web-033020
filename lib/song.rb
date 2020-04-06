@@ -7,11 +7,11 @@ class Song
   @@songs = []
 
   def initialize
-    @@songs << self
+    @@songs.push(self)
   end
 
   def self.find_by_name(name)
-    @@songs.detect{|a| a.name == name}
+    @@songs.detect{|actor| actor.name == name}
   end
 
   def self.all
